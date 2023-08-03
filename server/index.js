@@ -9,6 +9,7 @@ import clientRoutes from "./routes/client.js";
 import generalRoutes from "./routes/general.js";
 import managementRoutes from "./routes/management.js";
 import salesRoutes from "./routes/sales.js";
+import customerRoutes from './routes/customer.js';
 
 
 
@@ -37,6 +38,7 @@ app.use("/client", clientRoutes);
 app.use("/general", generalRoutes);
 app.use("/management", managementRoutes);
 app.use("/sales", salesRoutes);
+app.use('/api', customerRoutes);
 
 /* MONGOOSE SETUP */
 const PORT = process.env.PORT || 9000;

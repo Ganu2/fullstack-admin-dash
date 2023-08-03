@@ -1,5 +1,4 @@
-// models/Customer.js
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
 const customerSchema = new mongoose.Schema({
   name: {
@@ -14,10 +13,6 @@ const customerSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  country: {
-    type: String,
-    required: true,
-  },
   occupation: {
     type: String,
     required: true,
@@ -28,6 +23,6 @@ const customerSchema = new mongoose.Schema({
   },
 });
 
-const Customer = mongoose.model("Customer", customerSchema);
+const Customer = mongoose.model('Customer', customerSchema);
 
 export default Customer;

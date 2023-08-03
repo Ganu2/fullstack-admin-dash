@@ -8,6 +8,7 @@ import Layout from "scenes/layout";
 import Dashboard from "scenes/dashboard";
 import Products from "scenes/products";
 import Customers from "scenes/customers";
+import Customer from "scenes/customer";
 import Transactions from "scenes/transactions";
 import Geography from "scenes/geography";
 import Overview from "scenes/overview";
@@ -40,6 +41,7 @@ const theme = useMemo(() => createTheme(themeSettings(mode)),[mode]);
           <Route path="/breakdown" element={<Breakdown />} />
           <Route path="/admin" element={<Admins />} />
           <Route path="/performance" element={<Performance />} />
+          <Route path="/customer" element={<Customer />} />
           </Route>
         </Routes>
       </ThemeProvider>

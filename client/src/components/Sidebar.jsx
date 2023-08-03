@@ -95,7 +95,7 @@ const navItems = [
     icon: <TrendingUpOutlined />,
   },
   {
-    text: "Add Customer",
+    text: "Customer",
     icon: <Groups2Outlined />,
   },
 ]
@@ -138,7 +138,7 @@ const Sidebar = ({
         <FlexBetween color={theme.palette.secondary.main}>
           <Box display="flex" alignItems="center" gap="0.5rem">
             <Typography variant="h4" fontWeight="bold">
-              STRAX IT 
+              Compsale IT 
             </Typography>
           </Box>
           {!isNonMobile && (
